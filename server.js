@@ -17,8 +17,20 @@ server.get('/location', (request, response) => {
     const locationData = require('./data/geo.json');
     const location = new Location('Lynnwood', locationData);
     response.send(location);
-
+    
 });
+//////////////////////////////////////////////////////////////////
+// [
+//     {
+//       "forecast": "Partly cloudy until afternoon.",
+//       "time": "Mon Jan 01 2001"
+//     },
+//     {
+//       "forecast": "Mostly cloudy in the morning.",
+//       "time": "Tue Jan 02 2001"
+//     },
+//     ...
+//   ]
 
 function Weather(sum,date) {
     this.forecast = sum;
@@ -33,6 +45,7 @@ server.get('/weather', (request, response) => {
     weatherData.daily.data.forEach( data => {
         let date = new Date(data.time * 1000).toDateString();
         let sum = data.summary;
+
        new Weather(sum,date);
 
     });
@@ -44,4 +57,3 @@ server.use('*', (request, response) => {
 server.use((error, request, response) => {
     response.status(500).send(error);
 });
-//////////////////////////////////////////////////////////////////
