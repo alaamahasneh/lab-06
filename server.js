@@ -6,6 +6,9 @@ server.use(cors());
 require('dotenv').config();
 const PORT = process.env.PORT || 5500;
 server.listen(PORT, () => console.log('listening at PORT 5500'));
+server.get('/', (request, response) => {
+    response.send('App is working');
+});
 function Location(city, locationData) {
     this.search_query = city;
     this.formatted_query = locationData[0].display_name;
