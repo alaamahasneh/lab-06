@@ -20,9 +20,9 @@ server.get('/location', (request, response) => {
 
 });
 
-function Weather(data) {
-    this.forecast = data.summary;
-    this.time = new Date(data.time * 1000);
+function Weather(sum,date) {
+    this.forecast = sum;
+    this.time = date;
     console.log(this.time);
     Weather.all.push(this);
 }
@@ -31,11 +31,12 @@ Weather.all = []
 server.get('/weather', (request, response) => {
     const weatherData = require('./data/darksky.json');
     weatherData.daily.data.forEach( data => {
-        let weather= new Weather(data)
+        let sum = data.summary;
+       let date = new Date(data.time * 1000);
+       new Weather(sum,date);
 
-       
     });
-    response.send(weather);
+    response.send(Weather.all);
 });
 server.use('*', (request, response) => {
     response.status(404).send('sorry , not found');
