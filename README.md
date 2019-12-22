@@ -1,7 +1,7 @@
 # lab-06
 
 
-**Author**: Your Name Goes Here
+**Author**: Ala'a and Mohammad sboul
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
@@ -22,13 +22,27 @@
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 -->
 
+///////////////////////////////////////////////////////
+Number and name of feature:(/weather)
 
-Number and name of feature: ________________________________
+Estimate of time needed to complete: 2hr
 
-Estimate of time needed to complete: _____
+Start time: 3:30
 
-Start time: _____
+Finish time: 8:14 ( but i take a break for 2 hr)
 
-Finish time: _____
+Actual time needed to complete: 3:30 hr
 
-Actual time needed to complete: _____
+///////////////////////////////////////////////////////
+My Reference :
+
+the demo (https://github.com/LTUC/amman-301d2/blob/master/class-06/demo/server-demo/server.js).
+
+search in these websites :
+1. (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach).
+2. (https://dev.to/saigowthamr/how-to-loop-through-object-in-javascript-es6-3d26).
+3. (https://javascript.info/date).
+
+/////////////////////////////////////////////////////
+you can found my trello here :
+(https://trello.com/b/M7THQ3ue/lab6).
