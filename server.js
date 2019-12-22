@@ -46,6 +46,7 @@ Weather.all = []
 server.get('/weather', (request, response) => {
     const weatherData = require('./data/darksky.json');
     weatherData.daily.data.forEach( data => {
+        // This part done by Mohammad
         let date = new Date(data.time * 1000).toDateString();
         let sum = data.summary;
 

@@ -5,22 +5,29 @@
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
+this app created for get the location and weather for certain city .
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+define express.
+ initialize a server.
+ define Cross Origin Resource Sharing.
+  get all environment variable you need.
+  Make the app listening.
+  create a constrctour function for location and weather .
+  Read the data from the user (request).
+find the certain data( location , weather) in (geo.json, darksky.json).
+
+
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
-
+when we access the certain data inside object , you can use foEach to through inside it and search about what ever you want .
+Also we use (toDateString) to convert the time number to date.
 ## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
-
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource.
+22-12-2019 10:23pm - Application now has a fully-functional express server, with a GET route for the location resource.
 
 ## Credits and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
--->
+i worked with my partner ( Mohammad al-sboul)
+
 
 ///////////////////////////////////////////////////////
 Number and name of feature:(/weather)
